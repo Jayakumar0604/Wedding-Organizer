@@ -1,7 +1,7 @@
 import React from 'react'
 import SSecond from './SSecond'
 import Profile from '../../Components/Profile'
-import Back from "../../assets/images/services-1.jpg"
+import Back from "../../assets/images/services-1.webp"
 
 const Services = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Back from "../../assets/images/Back.jpg";
+import Back from "../../assets/images/Back.webp";
 import COne from "./COne";
 import Map from "./Map";
 import Profile from "../../Components/Profile";

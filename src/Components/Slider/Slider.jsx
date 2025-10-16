@@ -4,12 +4,12 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Client1 from "../../assets/Sliders/slide-1.jpg";
-import Client2 from "../../assets/Sliders/slide-2.jpg";
-import Client3 from "../../assets/Sliders/slide-3.jpg";
-import Client4 from "../../assets/Sliders/slide-4.jpg";
-import Client5 from "../../assets/Sliders/slide-5.jpg";
-import Client6 from "../../assets/Sliders/slide-6.jpg";
+import Client1 from "../../assets/Sliders/slide-1.webp";
+import Client2 from "../../assets/Sliders/slide-2.webp";
+import Client3 from "../../assets/Sliders/slide-3.webp";
+import Client4 from "../../assets/Sliders/slide-4.webp";
+import Client5 from "../../assets/Sliders/slide-5.webp";
+import Client6 from "../../assets/Sliders/slide-6.webp";
 
 const Slider = () => {
   const images = [Client1, Client2, Client3, Client4, Client5, Client6];

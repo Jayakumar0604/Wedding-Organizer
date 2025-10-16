@@ -1,7 +1,7 @@
 import React from 'react'
 import GTwo from './GTwo'
 import Profile from '../../Components/Profile'
-import Back from "../../assets/images/Gallery-1.jpg"
+import Back from "../../assets/images/Gallery-1.webp"
 
 const Gallery = () => {
   return (

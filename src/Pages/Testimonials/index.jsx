@@ -1,5 +1,5 @@
 import React from "react";
-import Back from "../../assets/images/Testimonials.jpg";
+import Back from "../../assets/images/Testimonials.webp";
 import TFirst from "./TFirst";
 import TTwo from "./TTwo";
 import Profile from "../../Components/Profile";

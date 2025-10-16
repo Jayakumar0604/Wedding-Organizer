@@ -1,5 +1,5 @@
 import React from "react";
-import Pic from "../../assets/images/about-01-free-img.jpg";
+import Pic from "../../assets/images/about-01-free-img.webp";
 import Back from "../../assets/images/bg-overlay-01-free-img.png";
 
 const HFirst = () => {
