@@ -10,9 +10,6 @@ import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
-    // <div>
-    //   <Header/>
-    // </div>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Mainlayout />}>
