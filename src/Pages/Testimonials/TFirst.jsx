@@ -1,12 +1,12 @@
 import React from "react";
-import B1 from "../../assets/Testimonials/b1.webp";
-import B2 from "../../assets/Testimonials/b2.webp";
-import B3 from "../../assets/Testimonials/b3.webp";
-import B4 from "../../assets/Testimonials/b4.webp";
-import G1 from "../../assets/Testimonials/g1.webp";
-import G2 from "../../assets/Testimonials/g2.webp";
-import G3 from "../../assets/Testimonials/g3.webp";
-import G4 from "../../assets/Testimonials/g4.webp";
+import B1 from "../../assets/b1.webp";
+import B2 from "../../assets/b2.webp";
+import B3 from "../../assets/b3.webp";
+import B4 from "../../assets/b4.webp";
+import G1 from "../../assets/gg1.webp";
+import G2 from "../../assets/gg2.webp";
+import G3 from "../../assets/gg3.webp";
+import G4 from "../../assets/gg4.webp";
 
 const TFirst = () => {
   const Profile = [

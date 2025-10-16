@@ -1,7 +1,7 @@
 import React from "react";
-import WPic from "../../assets/images/services-03-free-img.webp";
-import BPic from "../../assets/images/services-02-free-img.webp";
-import HPic from "../../assets/images/services-01-free-img.webp";
+import WPic from "../../assets/services-03-free-img.webp";
+import BPic from "../../assets/services-02-free-img.webp";
+import HPic from "../../assets/services-01-free-img.webp";
 
 const HSecond = () => {
   const data = [

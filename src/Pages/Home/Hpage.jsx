@@ -1,5 +1,5 @@
 import React from 'react'
-import Back from "../../assets/images/banner-03.webp";   
+import Back from "../../assets/banner-03.webp";   
 
 const Hpage = () => {
   return (

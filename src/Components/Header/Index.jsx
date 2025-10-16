@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import logo from "../../assets/images/logo-regular-free-img.png";
+import logo from "../../assets/logo-regular-free-img.png";
 import {
   FaFacebookSquare,
   FaInstagram,

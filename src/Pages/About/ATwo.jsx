@@ -1,6 +1,6 @@
 import React from "react";
-import About from "../../assets/images/bg-overlay-01-free-img.png";
-import Wed from "../../assets/images/wedding.webp";
+import About from "../../assets/bg-overlay-01-free-img.png";
+import Wed from "../../assets/wedding.webp";
 const ATwo = () => {
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
-import Pic from "../../assets/images/about-01-free-img.webp";
-import Back from "../../assets/images/bg-overlay-01-free-img.png";
+import Pic from "../../assets/about-01-free-img.webp";
+import Back from "../../assets/bg-overlay-01-free-img.png";
 
 const HFirst = () => {
   return (

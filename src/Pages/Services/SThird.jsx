@@ -1,8 +1,8 @@
 import React from "react";
-import Fpic from "../../assets/images/services.webp";
-import Ppic from "../../assets/images/services-2.webp";
-import Epic from "../../assets/images/services-3.webp";
-import Dpic from "../../assets/images/services-4.webp";
+import Fpic from "../../assets/services.webp";
+import Ppic from "../../assets/services-2.webp";
+import Epic from "../../assets/services-3.webp";
+import Dpic from "../../assets/services-4.webp";
 
 const SThird = () => {
   const services = [

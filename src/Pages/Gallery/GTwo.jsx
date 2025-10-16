@@ -1,13 +1,13 @@
 import React from "react";
-import G1 from "../../assets/Gallery/G1.webp";
-import G2 from "../../assets/Gallery/G2.webp";
-import G3 from "../../assets/Gallery/G3.webp";
-import G4 from "../../assets/Gallery/G4.webp";
-import G5 from "../../assets/Gallery/G5.webp";
-import G6 from "../../assets/Gallery/G6.webp";
-import G7 from "../../assets/Gallery/G7.webp";
-import G8 from "../../assets/Gallery/G8.webp";
-import G9 from "../../assets/Gallery/G9.webp";
+import G1 from "../../assets/G1.webp";
+import G2 from "../../assets/G2.webp";
+import G3 from "../../assets/G3.webp";
+import G4 from "../../assets/G4.webp";
+import G5 from "../../assets/G5.webp";
+import G6 from "../../assets/G6.webp";
+import G7 from "../../assets/G7.webp";
+import G8 from "../../assets/G8.webp";
+import G9 from "../../assets/G9.webp";
 
 const GTwo = () => {
   const Images = [
