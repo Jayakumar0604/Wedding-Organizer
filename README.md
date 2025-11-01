@@ -2,6 +2,8 @@
 
 A modern, responsive wedding planning website built with React and Vite. This elegant single-page application showcases wedding services, galleries, testimonials, and provides an easy way for couples to get in touch with wedding organizers.
 
+🌐 **Live Demo**: [https://wedding-organizer.netlify.app/](https://wedding-organizer.netlify.app/)
+
 ## 🎯 Features
 
 - **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
@@ -135,9 +137,11 @@ The production build will be available in the `dist/` directory, optimized and r
 
 ## 🌐 Deployment
 
+The project is deployed on **Netlify** and is live at: [https://wedding-organizer.netlify.app/](https://wedding-organizer.netlify.app/)
+
 The project includes a `_redirects` file in the `public/` directory for Netlify deployment. The built files in the `dist/` folder can be deployed to:
 
-- **Netlify** - Drag and drop the `dist/` folder
+- **Netlify** - Drag and drop the `dist/` folder (Currently deployed)
 - **Vercel** - Connect your Git repository
 - **GitHub Pages** - Configure for static site hosting
 - **Any static hosting service**
