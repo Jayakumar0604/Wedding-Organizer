@@ -34,18 +34,18 @@ const COne = () => {
             <h1 className="text-[25px] lg:text-[28px] pb-[10px] cardo-regular">
               Our Office
             </h1>
-            <h2 className="text-[14px] lg:text-md raleway-font">
-              123 Pudukkottai, Pudukkottai(Dt), TN 10160, India{" "}
-            </h2>
+            <p className="text-[14px] lg:text-md raleway-font">
+              45, East Car Street, Pudukkottai, Tamil Nadu - 622001, India
+            </p>
           </div>
           <div className="pb-[50px]">
             <h1 className=" text-[25px] lg:text-[28px] pb-[10px] cardo-regular">
               Contact us
             </h1>
-            <h2 className="text-[14px] lg:text-md raleway-font">
-              <h1>Email: jayakumarcse0421@gmail.com </h1>
-              <h2>Phone: 929-242-6868 </h2>
-            </h2>
+            <div className="text-[14px] lg:text-md raleway-font space-y-1">
+              <p>Email: jayakumarcse0421@gmail.com </p>
+              <p>Phone: +91 92924 26868 </p>
+            </div>
           </div>
           <div className="pb-[50px]">
             <h1 className="text-[25px] lg:text-[28px] pb-[10px] cardo-regular">
@@ -53,14 +53,14 @@ const COne = () => {
             </h1>
             <div className="flex gap-4">
               {Icons?.map((items, i) => (
-                <h2 key={i} className="text-xl py-2 raleway-font">
-                  {items.icon}{" "}
-                </h2>
+                <div key={i} className="text-xl py-2 raleway-font">
+                  {items.icon}
+                </div>
               ))}
             </div>
           </div>
         </div>
-        <div className="w-full md:mx-5 lg:mx-10 py-10 bg-white">
+        <div className="w-full md:mx-5 lg:mx-10 py-10 bg-white shadow-lg rounded-lg border-t-4 border-[#E9744B]">
           <Form />
         </div>
       </div>

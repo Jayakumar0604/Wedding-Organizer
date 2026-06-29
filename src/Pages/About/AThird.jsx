@@ -1,4 +1,5 @@
 import React from "react";
+import TeamCard from "../../Components/Common/TeamCard";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const AThird = () => {
@@ -7,76 +8,62 @@ const AThird = () => {
     {
       id: 1,
       name: <FaFacebookF />,
-      link: "#Home",
+      link: "#",
     },
     {
       id: 3,
       name: <FaTwitter />,
-      link: "#Home",
+      link: "#",
     },
     {
       id: 2,
       name: <FaInstagram />,
-      link: "#Home",
+      link: "#",
     },
   ];
 
   const Team = [
     {
       id: 1,
-      role: "Owner",
+      role: "Founder & Director",
       name: "Jayakumar",
       about:
-        "The Owner built this firm on a simple principle: flawless execution. Trust his vision for your unforgettable celebration.",
+        "Jayakumar built Saffron & Silk on a single vision: organizing flawless traditional South Indian weddings that respect both family customs and budget, ensuring unforgettable celebrations.",
     },
     {
       id: 2,
-      role: "Event Director",
+      role: "Lead Event Designer",
       name: "Indhumathi",
       about:
-        "Expert Event Director. She ensures every detail is perfect, delivering breathtaking, personalized weddings with grace.",
+        "Indhumathi specializes in exquisite temple-style mandapam decoration, custom stage floral setups, and traditional lighting designs that look breathtaking.",
     },
     {
-      id: 1,
-      role: "Wedding Planner",
+      id: 3,
+      role: "Head Wedding Planner",
       name: "Sathya",
       about:
-        "Your passionate Wedding Planner. She transforms your vision into a stunning reality, handling every detail with grace.",
+        "Sathya coordinates all custom rituals, from early morning Muhurthams to heritage processions, managing catering, priests, and guest hospitality with absolute grace.",
     },
   ];
   return (
     <>
-      <div className="bg-black text-white border-b  border-[#7A7A7A] py-10 ">
+      <div className="bg-black text-white border-b border-[#7A7A7A] py-16">
         <div className="px-5 md:px-20">
-          <h1 className="text-[40px] md:text-[62px] lg:text-[100px] cardo-regular pb-[20px]">
+          <h1 className="text-[40px] md:text-[62px] lg:text-[80px] cardo-regular pb-[10px] text-[#E9744B]">
             Our Team
           </h1>
-          <div className="grid md:grid-cols-3 gap-5 py-10 ">
-            {Team?.map((i) => (
-              <div key={i.id}>
-                <h3 className="text-[#e9744b] text-[14px] lg:text-[16px] cardo-regular">
-                  {i.role}
-                </h3>
-                <h1 className="cardo-regular text-[30px] md:text-[35px] lg:text-[50px] pb-[10px]">
-                  {i.name}
-                </h1>
-                <h2 className="text-[14px] lg:text[16px] raleway-font">
-                  {i.about}
-                </h2>
-                <div className="pt-5">
-                  <h1 className="flex">
-                    {Icon?.map((items) => (
-                      <a
-                        className="px-[10px] py-[10px] rounded-[100px] hover:text-[#e9744b]"
-                        key={items.id}
-                        href={items.link}
-                      >
-                        {items.name}
-                      </a>
-                    ))}
-                  </h1>
-                </div>
-              </div>
+          <p className="raleway-font text-gray-400 max-w-lg mb-10 text-[14px] md:text-[16px]">
+            Meet our dedicated event planners and directors who turn your dream Kalyanam into an exquisite reality.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-4">
+            {Team?.map((member) => (
+              <TeamCard
+                key={member.id}
+                role={member.role}
+                name={member.name}
+                about={member.about}
+                socialIcons={Icon}
+              />
             ))}
           </div>
         </div>

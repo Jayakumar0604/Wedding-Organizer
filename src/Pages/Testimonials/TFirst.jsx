@@ -1,4 +1,5 @@
 import React from "react";
+import TestimonialCard from "../../Components/Common/TestimonialCard";
 import B1 from "../../assets/b1.webp";
 import B2 from "../../assets/b2.webp";
 import B3 from "../../assets/b3.webp";
@@ -13,66 +14,62 @@ const TFirst = () => {
     {
       img: B1,
       about:
-        "The team was meticulous, handling every vendor and detail flawlessly. Our Full Planning wedding felt like a beautiful dream!",
+        "The catering and traditional Kalyana Sappadu served on banana leaves was extraordinary! Our guests are still talking about the delicious feast. Saffron & Silk managed everything flawlessly.",
       name: "Arjun",
     },
     {
       img: G1,
       about:
-        "They transformed our venue into a fairytale! The design work was breathtaking and perfectly reflected our personal style.",
+        "The marigold and jasmine decorations at our mandapam looked stunning! The team coordinated the early morning Muhurtham flawlessly. Sathya felt like family to us.",
       name: "Priya",
     },
     {
       img: B2,
       about:
-        "We couldn't have managed the Destination planning without them. Seamless travel, perfect execution, absolute joy!",
+        "Planning a destination Chettinad palace wedding seemed impossible, but Saffron & Silk handled everything from guest travels to local priests and Nadaswaram bands. Absolute bliss!",
       name: "Rohan",
     },
     {
       img: B3,
       about:
-        "Jixza's Bridal Assistance was a lifesaver. I felt calm and truly enjoyed every minute of the ceremony and reception.           ",
+        "Sathya's ritual coordination was a lifesaver. She managed the early morning Kasi Yatra and Nalangu timings perfectly. We could relax and enjoy our special day.",
       name: "Deepak",
     },
     {
       img: G3,
       about:
-        "Our Partial Assistance felt like full planning! They jumped in exactly when needed, delivering organization and peace of mind.",
+        "The Nalangu ceremony was so lively and fun! Saffron & Silk organized traditional swing decor and games. Their day-of coordination was incredibly helpful.",
       name: "Anjali",
     },
     {
       img: B4,
       about:
-        "Their Express Wedding service delivered sophistication in just three months. Professional and incredibly high-quality planning.",
+        "Our subha muhurtham date was fixed with just two months notice. Their express coordination delivered a high-quality, beautiful traditional wedding in record time.",
       name: "Vikram",
     },
     {
       img: G2,
       about:
-        "Absolute professionals. From the first meeting to the last dance, their coordination meant zero stress for us. Highly recommend!",
+        "From the spectacular Mappillai Azhaippu grand entrance to the reception, every detail was perfect. Having them coordinate meant zero stress for our parents.",
       name: "Kavya",
     },
     {
       img: G4,
       about:
-        "The whole process was fun, not stressful. We received honest advice and a wedding day that was truly magical and personal.     ",
+        "The temple decor, traditional music, and overall execution were exactly what we dreamed of. The process was fun, transparent, and completely aligned with our family values.",
       name: "Meera",
     },
   ];
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 py-5 raleway-font md:gap-4 lg:gap-2 px-5 md:px-20">
-        {Profile?.map((items, img) => (
-          <div key={img} >
-            <div className="md:px-5 lg:px-20 py-5 text-[16px]">{items.about}</div>
-            <div className="flex py-5 md:px-10 lg:px-20  items-center">
-              <img src={items.img} alt="" className="w-[100px] rounded-full" />
-              <div className="px-5">
-                <h1 className="text-[14px] lg:text-[16px]">{items.name}</h1>
-                <h1 className="text-[12px] lg:text-[14px]">Customer</h1>
-              </div>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 py-5 gap-6 px-5 md:px-20">
+        {Profile?.map((items, index) => (
+          <TestimonialCard
+            key={index}
+            img={items.img}
+            about={items.about}
+            name={items.name}
+          />
         ))}
       </div>
     </>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from "../../Components/Common/Button";
 import Back from "../../assets/banner-03.webp";   
 
 const Hpage = () => {
@@ -17,25 +18,25 @@ const Hpage = () => {
         <div className="relative z-10 flex flex-col items-start justify-around h-full px-10 md:px-24 lg:px-32 text-black">
           {/* Name */}
           <div>
-            <h1 className="cardo-regular font-light text-center flex md:flex-col text-[46px] md:text-[100px] lg:text-[125px] leading-none">
-              <span className="px-[5px]">Olivia</span>
-              <span> Dunham</span>
+            <h1 className="cardo-regular font-light text-left flex flex-col text-[46px] md:text-[100px] lg:text-[120px] leading-none">
+              <span className="text-[#E9744B]">Saffron</span>
+              <span>& Silk</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-[20px] cardo-regular font-serif md:text-[24px] flex items-center mt-4">
               <span className="border-b border-black w-10 h-0 block"></span>
               <span className="ml-3 text-lg tracking-wider">
-                Wedding Planner{" "}
+                Traditional Tamil Nadu Wedding Planners
               </span>
             </p>
           </div>
 
           {/* Button */}
           <div>
-          <button className=" md:mt-10 bg-black text-white px-6 raleway-font py-3 text-[16px] md:text-[18px] hover:bg-gray-800 transition duration-300">
-            Book Your Free Consultation <span className="px-[10px]"> &rarr;</span>
-          </button>
+            <Button to="/contact" variant="primary" className="md:mt-10">
+              Plan Your Dream Kalyanam <span className="ml-2">&rarr;</span>
+            </Button>
           </div>
         </div>
       </div>

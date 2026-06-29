@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../Components/Common/Button";
 import Pic from "../../assets/about-01-free-img.webp";
 import Back from "../../assets/bg-overlay-01-free-img.png";
 
@@ -14,28 +15,30 @@ const HFirst = () => {
             </h1>
           </div>
           <h1 className="cardo-regular text-[25px] md:text-[28px] mb-[10px]">
-            Dreaming of the perfect wedding?
+            Dreaming of the perfect traditional wedding?
           </h1>
           <div className=" pb-[20px] md:pb-[40px]">
-            <h1 className="text-[14px] md:text-[16px] md:pr-[80px] mb-[40px] raleway-font">
+            <p className="text-[14px] md:text-[16px] md:pr-[80px] mb-[40px] raleway-font text-gray-700 leading-relaxed">
               Welcome, my name is Sathya. Our passion is crafting unique,
-              magnificent weddings. We believe every couple deserves a
-              celebration built on meticulous planning, expert guidance, and
-              creative design. We invite you to explore our services and see how
-              we eliminate stress, ensuring your special day is flawlessly
-              executed and truly unforgettable. We are here to bring your vision
-              to life.  
-            </h1>
-            <button className="text-[16px] text-white bg-black ralewar-font px-[30px] py-[20px] md:px-[20px]">
+              magnificent Tamil Nadu weddings. We believe every couple deserves a
+              celebration built on meticulous planning, expert guidance, and deep
+              cultural authenticity. From early morning Muhurtham ceremonies and
+              vibrant Nalangu games to grand Vazhaillai Kalyana Sappadu (traditional
+              feasts), we bring traditional rituals to life with modern elegance.
+              We invite you to explore our services and see how we eliminate
+              stress, ensuring your special day is flawlessly executed and truly
+              unforgettable. We are here to bring your vision to life.  
+            </p>
+            <Button to="/about" variant="primary">
               Read More
-            </button>
+            </Button>
           </div>
         </div>
         <div
           style={{ backgroundImage: `url(${Back})` }}
           className="lg:w-400 px-[20px] py-[20px] md:py-[40px] bg-center object-cover"
         >
-          <img src={Pic} alt="" />
+          <img src={Pic} alt="About Sathya" />
         </div>
       </div>
     </>

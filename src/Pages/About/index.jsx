@@ -7,9 +7,9 @@ import Back from "../../assets/bride-and-groom-image.webp";
 const About = () => {
   return (
     <>
-    <Profile Back={Back}/>
-    <ATwo/>
-    <AThird/>
+      <Profile Back={Back} title="About Us" subtitle="Who We Are" />
+      <ATwo/>
+      <AThird/>
     </>
   )
 }
