@@ -7,7 +7,7 @@ import Profile from "../../Components/Profile";
 const Contact = () => {
   return (
     <>
-      <Profile Back={Back} />
+      <Profile Back={Back} title="Contact Us" subtitle="Start Planning Your Kalyanam" />
       <div className="bg-[#f6f2f1] px-5 md:px-10 lg:px-20 py-10 w-full">
         <div className="flex-2 py-10 xl:text-center">
           <h1 className="text-[46px] md:text-[100px] lg:text-[125px] cardo-regular">

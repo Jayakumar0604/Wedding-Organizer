@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo-regular-free-img.png";
 import {
   FaFacebookSquare,
@@ -23,11 +22,11 @@ const Header = () => {
 
   const Nav = [
     { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "About", link: "/About" },
-    { id: 3, name: "Services", link: "/Services" },
-    { id: 4, name: "Gallery", link: "/Gallery" },
-    { id: 5, name: "Testimonials", link: "/Testimonials" },
-    { id: 6, name: "Contact", link: "/Contact" },
+    { id: 2, name: "About", link: "/about" },
+    { id: 3, name: "Services", link: "/services" },
+    { id: 4, name: "Gallery", link: "/gallery" },
+    { id: 5, name: "Testimonials", link: "/testimonials" },
+    { id: 6, name: "Contact", link: "/contact" },
   ];
 
   const MenuChange = () => {
@@ -38,7 +37,9 @@ const Header = () => {
     <>
       <header className="bg-[#f0eded] flex items-center justify-around">
         <div className="w-[83px] lg:w-[120px] py-[16px]">
-          <img src={logo} alt="Website Logo" />
+          <Link to="/">
+            <img src={logo} alt="Website Logo" />
+          </Link>
         </div>
         <h1
           className="text-[26px] p-[10px] block lg:hidden border text-[#E9744B]"
@@ -49,11 +50,11 @@ const Header = () => {
 
         <div className="hidden lg:block">
           <div className="flex items-center">
-            <h1 className="flex raleway-font">
+            <nav className="flex raleway-font">
               {Nav.map((item) => (
-                <a
+                <Link
                   key={item.id}
-                  href={item.link}
+                  to={item.link}
                   className={`px-[16px] hover:text-[#E9744B] ${
                     currentPath === item.link
                       ? "text-[#E9744B] font-semibold"
@@ -61,10 +62,10 @@ const Header = () => {
                   }`}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
-            </h1>
-            <h1 className="flex">
+            </nav>
+            <div className="flex">
               {Icon.map((item) => (
                 <a
                   key={item.id}
@@ -74,17 +75,18 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-            </h1>
+            </div>
           </div>
         </div>
       </header>
 
       {isOpen && (
-        <h1 className="block text-[15px] raleway-font duration-300 font-normal lg:hidden">
+        <nav className="block text-[15px] raleway-font duration-300 font-normal lg:hidden">
           {Nav.map((item) => (
-            <a
+            <Link
               key={item.id}
-              href={item.link}
+              to={item.link}
+              onClick={() => setIsOpen(false)}
               className={`flex flex-col py-[10px] justify-center px-[20px] shadow-[0_2px_4px_0_rgba(0,0,0,0.1)] ${
                 currentPath === item.link
                   ? "text-[#E9744B] font-semibold"
@@ -92,9 +94,9 @@ const Header = () => {
               }`}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
-        </h1>
+        </nav>
       )}
     </>
   );

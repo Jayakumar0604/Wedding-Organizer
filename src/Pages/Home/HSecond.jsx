@@ -1,4 +1,5 @@
 import React from "react";
+import ServiceCard from "../../Components/Common/ServiceCard";
 import WPic from "../../assets/services-03-free-img.webp";
 import BPic from "../../assets/services-02-free-img.webp";
 import HPic from "../../assets/services-01-free-img.webp";
@@ -8,23 +9,23 @@ const HSecond = () => {
     {
       id: 1,
       src: WPic,
-      title: "Full Planning",
+      title: "Muzhu Nirvagam (Full Planning)",
       about:
-        "This is our comprehensive, end-to-end service. We manage everything: budgeting, vendor selection, design, and seamless day-of execution. Your perfect wedding, zero stress.",
+        "Comprehensive management of your Kalyanam. From Pandhakkal and Muhurtham rituals to catering, guest logistics, and reception, we orchestrate a perfect traditional wedding.",
     },
     {
       id: 2,
       src: BPic,
-      title: "Destination Wedding",
+      title: "Heritage & Destination Weddings",
       about:
-        "Dreaming of a wedding abroad? We handle all international logistics, local vendors, and guest travel for a truly seamless and unforgettable celebration.",
+        "Dreaming of a royal wedding in a Chettinad palace, a coastal ceremony in Mahabalipuram, or a divine celebration in Madurai? We manage logistics and heritage venue decorations seamlessly.",
     },
     {
       id: 3,
       src: HPic,
-      title: "Express Wedding",
+      title: "Muhurtham & Express Planning",
       about:
-        "Perfect for tight deadlines. We fast-track design and logistics, delivering a stunning, fully planned, high-quality wedding experience in under four months.",
+        "Perfect for tight auspicious schedules. We fast-track priest coordination, traditional music (Nadaswaram), floral decor, and logistics for a beautiful Muhurtham in under three months.",
     },
   ];
   return (
@@ -34,26 +35,14 @@ const HSecond = () => {
           Services
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row overflow-hidden justify-around">
+      <div className="flex flex-col md:flex-row overflow-hidden justify-around bg-white px-4 md:px-10">
         {data?.map((items) => (
-          <div key={items.id} className="py-5 place-items-center md:py-20 ">
-            <div className="flex  justify-center w-[335px] md:w-[203px] lg:w-[311px]">
-              <img src={items.src} className="" alt="Wedding Image" />
-            </div>
-            <div className="flex flex-col md:flex-row pt-[20px]  md:space-x-3">
-              <div className="md:py-10">
-                <h1 className="border-b-2 md:border-b-1 w-10"></h1>
-              </div>
-              <div className="py-6">
-                <h1 className="text-[20px] md:text-[20px] lg:text-[22px] cardo-regular pb-[10px]">
-                  {items.title}
-                </h1>
-                <h1 className="text-[14px] lg:w-60 md:text-[14px] lg:text-[16px] raleway-font">
-                  {items.about}
-                </h1>
-              </div>
-            </div>
-          </div>
+          <ServiceCard
+            key={items.id}
+            src={items.src}
+            title={items.title}
+            about={items.about}
+          />
         ))}
       </div>
     </>
